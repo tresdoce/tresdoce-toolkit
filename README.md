@@ -86,7 +86,7 @@ yarn test
 
 | Package                                            | Descripción                            | Versión                                                                                                                                   | Changelog                                 |
 |----------------------------------------------------|----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------|
-| [`@tresdoce-toolkit/core`](./packages/core) | Módulo de funcionalidades a nivel core | [![version](https://img.shields.io/npm/v/@tresdoce-toolkit/core.svg)](https://www.npmjs.com/package/@tresdoce-toolkit/core) | [Changelog](./packages/core/CHANGELOG.md) |
+| [`@tresdoce-toolkit/demo`](./packages/demo) | this is a demo pkg | [![version](https://img.shields.io/npm/v/@tresdoce-toolkit/demo.svg)](https://www.npmjs.com/package/@tresdoce-toolkit/demo) | [Changelog](./packages/demo/CHANGELOG.md) |
 <!---PLOP-TOOLKIT-TABLE-->
 
 <a name="commits"></a>

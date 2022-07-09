@@ -1,0 +1,77 @@
+{
+  "name": "@tresdoce-toolkit/demo",
+  "version": "0.0.0",
+  "description": "Tresdoce Toolkit - this is a demo pkg",
+  "author": {
+    "name": "Maximiliano \"Mex\" Delgado",
+    "email": "mdelgado@tresdoce.com.ar",
+    "url": "https://rudemex.github.io/"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "keywords": [
+    "nestjs",
+    "demo"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tresdoce/tresdoce-toolkit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tresdoce/tresdoce-toolkit/issues"
+  },
+  "homepage": "https://github.com/tresdoce/tresdoce-toolkit#readme",
+  "main": "src/index.ts",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "shx rm -rf ../../dist/demo",
+    "build": "pika build --out ../../dist/demo",
+    "test": "jest --runInBand --detectOpenHandles --coverage --forceExit"
+  },
+  "publishConfig": {
+    "access": "public",
+    "directory": "../../dist/demo"
+  },
+  "peerDependencies": {},
+  "devDependencies": {
+    "@tresdoce-toolkit/config": "^0.0.0",
+    "@types/tresdoce-toolkit": "^0.0.0"
+  },
+  "prettier": {
+    "semi": true,
+    "tabWidth": 2,
+    "singleQuote": true,
+    "printWidth": 100,
+    "trailingComma": "all"
+  },
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-ts-standard-pkg",
+        {
+          "exclude": [
+            "**/__test__/*"
+          ]
+        }
+      ],
+      [
+        "@pika/plugin-build-node",
+        {
+          "exclude": [
+            "**/__test__/*"
+          ]
+        }
+      ],
+      [
+        "@pika/plugin-build-types",
+        {
+          "exclude": [
+            "**/__test__/*"
+          ]
+        }
+      ]
+    ]
+  }
+}
