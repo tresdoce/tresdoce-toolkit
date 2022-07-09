@@ -38,11 +38,6 @@ module.exports = {
             },
             {
                 type: 'add',
-                path: 'packages/{{kebabCase packageName}}/nest-cli.json',
-                templateFile: 'plops-templates/packages/basic/nest-cli.json.hbs',
-            },
-            {
-                type: 'add',
                 path: 'packages/{{kebabCase packageName}}/jest.config.js',
                 templateFile: 'plops-templates/packages/basic/jest.config.js.hbs',
             },
@@ -63,29 +58,18 @@ module.exports = {
             },
             {
                 type: 'add',
-                path: 'packages/{{kebabCase packageName}}/src/greeting/greeting.module.ts',
-                templateFile: 'plops-templates/packages/basic/src/greeting/greeting.module.ts.hbs',
+                path: 'packages/{{kebabCase packageName}}/src/greeting/index.ts',
+                templateFile: 'plops-templates/packages/basic/src/greeting/index.ts.hbs',
             },
             {
                 type: 'add',
-                path: 'packages/{{kebabCase packageName}}/src/greeting/services/greeting.service.ts',
-                templateFile:
-                    'plops-templates/packages/basic/src/greeting/services/greeting.service.ts.hbs',
-            },
-            {
-                type: 'add',
-                path: 'packages/{{kebabCase packageName}}/src/__test__/greeting.module.spec.ts',
-                templateFile: 'plops-templates/packages/basic/src/__test__/greeting.module.spec.ts.hbs',
-            },
-            {
-                type: 'add',
-                path: 'packages/{{kebabCase packageName}}/src/__test__/greeting.service.spec.ts',
-                templateFile: 'plops-templates/packages/basic/src/__test__/greeting.service.spec.ts.hbs',
+                path: 'packages/{{kebabCase packageName}}/src/__test__/greeting.spec.ts',
+                templateFile: 'plops-templates/packages/basic/src/__test__/greeting.spec.ts.hbs',
             },
             {
                 type: 'modify',
                 path: 'README.md',
-                template: '| [`@tresdoce-nestjs-toolkit/{{kebabCase packageName}}`](./packages/{{kebabCase packageName}}) | {{packageDescription}} | [![version](https://img.shields.io/npm/v/@tresdoce-nestjs-toolkit/{{kebabCase packageName}}.svg)](https://www.npmjs.com/package/@tresdoce-nestjs-toolkit/{{kebabCase packageName}}) | [Changelog](./packages/{{kebabCase packageName}}/CHANGELOG.md) |\n$1',
+                template: '| [`@tresdoce-toolkit/{{kebabCase packageName}}`](./packages/{{kebabCase packageName}}) | {{packageDescription}} | [![version](https://img.shields.io/npm/v/@tresdoce-toolkit/{{kebabCase packageName}}.svg)](https://www.npmjs.com/package/@tresdoce-toolkit/{{kebabCase packageName}}) | [Changelog](./packages/{{kebabCase packageName}}/CHANGELOG.md) |\n$1',
                 pattern: /(<!---PLOP-TOOLKIT-TABLE-->)/g,
             }
         );

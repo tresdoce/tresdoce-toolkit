@@ -1,5 +1,5 @@
 {
-  "extends": "@tresdoce-nestjs-toolkit/config",
+  "extends": "@tresdoce-toolkit/config",
   "include": [
     "packages/**/src/**/*.ts",
     "packages/**/src/**/*.tsx",

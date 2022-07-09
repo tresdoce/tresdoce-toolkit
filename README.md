@@ -1,40 +1,34 @@
 <div align="center">
-    <img alt="nestjs-logo" width="250" height="auto" src="https://camo.githubusercontent.com/c704e8013883cc3a04c7657e656fe30be5b188145d759a6aaff441658c5ffae0/68747470733a2f2f6e6573746a732e636f6d2f696d672f6c6f676f5f746578742e737667" />
-    <h1>Tresdoce NestJs Toolkit</h1>
+    <img alt="nestjs-logo" width="180" height="auto" src="./.readme-static/logo-mex-red.svg" />
+    <h1>Tresdoce Toolkit</h1>
 </div>
 
 <div align="center">
     <img src="https://img.shields.io/static/v1.svg?style=flat&label=Node&message=v14.17.0&labelColor=339933&color=757575&logoColor=FFFFFF&logo=Node.js" alt="Node.js"/>
     <img src="https://img.shields.io/static/v1.svg?style=flat&label=Npm&message=v6.14.13&labelColor=CB3837&logoColor=FFFFFF&color=757575&logo=npm" alt="Npm"/>
-    <img src="https://img.shields.io/static/v1.svg?style=flat&label=NestJs&message=v8.2.6&labelColor=E0234E&logoColor=FFFFFF&color=757575&logo=Nestjs" alt="NestJs"/>
     <img src="https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg" alt="lerna">
     <a href="./license.md">
-        <img alt="GitHub license" src="https://img.shields.io/github/license/tresdoce/tresdoce-nestjs-toolkit?style=flat">
+        <img alt="GitHub license" src="https://img.shields.io/github/license/tresdoce/tresdoce-toolkit?style=flat">
     </a>
     <br/>
-    <a href="https://github.com/tresdoce/tresdoce-nestjs-toolkit/actions/workflows/master.yml" target="_blank">
-        <img alt="GitHub Workflow Status" src="https://github.com/tresdoce/tresdoce-nestjs-toolkit/actions/workflows/master.yml/badge.svg?branch=master">
+    <a href="https://github.com/tresdoce/tresdoce-toolkit/actions/workflows/master.yml" target="_blank">
+        <img alt="GitHub Workflow Status" src="https://github.com/tresdoce/tresdoce-toolkit/actions/workflows/master.yml/badge.svg?branch=master">
     </a>
-    <a href="https://app.codecov.io/gh/tresdoce/tresdoce-nestjs-toolkit/" target="_blank">
-        <img alt="Codecov" src="https://img.shields.io/codecov/c/github/tresdoce/tresdoce-nestjs-toolkit?logoColor=FFFFFF&logo=Codecov&labelColor=#F01F7A">
+    <a href="https://app.codecov.io/gh/tresdoce/tresdoce-toolkit/" target="_blank">
+        <img alt="Codecov" src="https://img.shields.io/codecov/c/github/tresdoce/tresdoce-toolkit?logoColor=FFFFFF&logo=Codecov&labelColor=#F01F7A">
     </a>
-    <a href="https://sonarcloud.io/summary/new_code?id=tresdoce_tresdoce-nestjs-toolkit" target="_blank">  
-        <img src="https://sonarcloud.io/api/project_badges/measure?project=tresdoce_tresdoce-nestjs-toolkit&metric=alert_status" alt="sonarcloud">
+    <a href="https://sonarcloud.io/summary/new_code?id=tresdoce_tresdoce-toolkit" target="_blank">  
+        <img src="https://sonarcloud.io/api/project_badges/measure?project=tresdoce_tresdoce-toolkit&metric=alert_status" alt="sonarcloud">
     </a>
-    <a href="https://snyk.io/test/github/tresdoce/tresdoce-nestjs-toolkit" target="_blank">
-        <img src="https://snyk.io/test/github/tresdoce/tresdoce-nestjs-toolkit/badge.svg" alt="Snyk">
+    <a href="https://snyk.io/test/github/tresdoce/tresdoce-toolkit" target="_blank">
+        <img src="https://snyk.io/test/github/tresdoce/tresdoce-toolkit/badge.svg" alt="Snyk">
     </a>
     <br/> 
 </div>
 <br>
 
-Este toolkit está pensada para ser utilizado en [NestJs Starter](https://github.com/rudemex/nestjs-starter), o cualquier
-proyecto que utilice una configuración centralizada, siguiendo la misma arquitectura del starter.
-
-
 ## Glosario
 
-- [🥳 Demo](https://rudemex-nestjs-starter.herokuapp.com/docs)
 - [📝 Requerimientos básicos](#basic-requirements)
 - [💻 Scripts](#scripts)
 - [🧰 Toolkit](#toolkit)
@@ -47,11 +41,9 @@ proyecto que utilice una configuración centralizada, siguiendo la misma arquite
 
 ## 📝 Requerimientos básicos
 
-- [NestJs Starter](https://github.com/rudemex/nestjs-starter)
 - Node.js v14.17.0 or higher ([Download](https://nodejs.org/es/download/))
 - YARN v1.22.17 or higher
 - NPM v6.14.13 or higher
-- NestJS v8.2.6 or higher ([Documentación](https://nestjs.com/))
 - Lerna
 
 <a name="scripts"></a>
@@ -92,12 +84,9 @@ yarn test
 
 ## 🧰 Toolkit
 
-Los módulos de la siguiente lista, están pensados para ser consumidos por
-el [NestJs Starter](https://github.com/rudemex/nestjs-starter), siguiendo los lineamientos de `schematics`.
-
 | Package                                            | Descripción                            | Versión                                                                                                                                   | Changelog                                 |
 |----------------------------------------------------|----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------|
-| [`@tresdoce-nestjs-toolkit/core`](./packages/core) | Módulo de funcionalidades a nivel core | [![version](https://img.shields.io/npm/v/@tresdoce-nestjs-toolkit/core.svg)](https://www.npmjs.com/package/@tresdoce-nestjs-toolkit/core) | [Changelog](./packages/core/CHANGELOG.md) |
+| [`@tresdoce-toolkit/core`](./packages/core) | Módulo de funcionalidades a nivel core | [![version](https://img.shields.io/npm/v/@tresdoce-toolkit/core.svg)](https://www.npmjs.com/package/@tresdoce-toolkit/core) | [Changelog](./packages/core/CHANGELOG.md) |
 <!---PLOP-TOOLKIT-TABLE-->
 
 <a name="commits"></a>
