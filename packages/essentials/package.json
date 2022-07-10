@@ -11,6 +11,13 @@
     "lib": "lib",
     "test": "__tests__"
   },
+  "files": [
+    "lib"
+  ],
+  "bin": {
+    "sonarProperties": "./src/scripts/sonar-properties.js"
+  },
+  "main": "src/index.ts",
   "keywords": [
     "nestjs",
     "essentials"
@@ -23,7 +30,6 @@
     "url": "https://github.com/tresdoce/tresdoce-toolkit/issues"
   },
   "homepage": "https://github.com/tresdoce/tresdoce-toolkit#readme",
-  "main": "src/index.ts",
   "license": "MIT",
   "scripts": {
     "prebuild": "shx rm -rf ../../dist/essentials",

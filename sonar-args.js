@@ -4,7 +4,7 @@ const fs = require('fs');
 const organizationName = 'tresdoce';
 const projectName = 'tresdoce-toolkit';
 const sonarProjectKey = `${organizationName}_${projectName}`;
-const sonarPropertiesFilename = 'sonar-project.properties';
+const sonarPropertiesFilename = 'scripts-project.properties';
 
 const blacklist = ['.DS_Store', 'config', 'tresdoce-types'];
 const directoryPath = path.join(__dirname, 'packages');

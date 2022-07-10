@@ -1,1 +1,1 @@
-export { NpmConfig as versionrc } from './version';
+export { NpmConfig as versionrc } from './lib/versionrc';
