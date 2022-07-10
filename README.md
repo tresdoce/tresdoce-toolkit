@@ -84,9 +84,9 @@ yarn test
 
 ## 🧰 Toolkit
 
-| Package                                            | Descripción                            | Versión                                                                                                                                   | Changelog                                 |
-|----------------------------------------------------|----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------|
-| [`@tresdoce-toolkit/demo`](./packages/demo) | this is a demo pkg | [![version](https://img.shields.io/npm/v/@tresdoce-toolkit/demo.svg)](https://www.npmjs.com/package/@tresdoce-toolkit/demo) | [Changelog](./packages/demo/CHANGELOG.md) |
+| Package                                                 | Descripción                             | Versión                                                                                                                                 | Changelog                                       |
+|---------------------------------------------------------|-----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|
+| [`@tresdoce-toolkit/essentials`](./packages/essentials) | essentials configuration to application | [![version](https://img.shields.io/npm/v/@tresdoce-toolkit/essentials.svg)](https://www.npmjs.com/package/@tresdoce-toolkit/essentials) | [Changelog](./packages/essentials/CHANGELOG.md) |
 <!---PLOP-TOOLKIT-TABLE-->
 
 <a name="commits"></a>

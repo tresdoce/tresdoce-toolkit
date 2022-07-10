@@ -1,13 +1,13 @@
 <div align="center">
     <img alt="nestjs-logo" width="180" height="auto" src="./.readme-static/logo-mex-red.svg" />
-    <h1>Tresdoce Toolkit<br/>Demo</h1>
+    <h1>Tresdoce Toolkit<br/>Essentials</h1>
 </div>
 
 <div align="center">
     <img src="https://img.shields.io/static/v1.svg?style=flat&label=Node&message=v14.17.0&labelColor=339933&color=757575&logoColor=FFFFFF&logo=Node.js" alt="Node.js"/>
     <img src="https://img.shields.io/static/v1.svg?style=flat&label=Npm&message=v6.14.13&labelColor=CB3837&logoColor=FFFFFF&color=757575&logo=npm" alt="Npm"/><br/>
     <img alt="GitHub license" src="https://img.shields.io/github/license/tresdoce/tresdoce-toolkit?style=flat">
-    <img alt="Release" src="https://img.shields.io/npm/v/@tresdoce-toolkit/demo.svg">
+    <img alt="Release" src="https://img.shields.io/npm/v/@tresdoce-toolkit/essentials.svg">
     <br/>
 </div>
 <br/>
@@ -36,11 +36,11 @@
 ## 🛠️ Instalar dependencia
 
 ```
-npm install -S @tresdoce-toolkit/demo
+npm install -S @tresdoce-toolkit/essentials
 ```
 
 ```
-yarn add @tresdoce-toolkit/demo
+yarn add @tresdoce-toolkit/essentials
 ```
 
 <a name="configurations"></a>
