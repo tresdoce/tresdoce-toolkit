@@ -1,7 +1,7 @@
 {
-  "name": "@tresdoce-toolkit/demo",
+  "name": "@tresdoce-toolkit/essentials",
   "version": "0.0.0",
-  "description": "Tresdoce Toolkit - this is a demo pkg",
+  "description": "Tresdoce Toolkit - essentials configuration to application",
   "author": {
     "name": "Maximiliano \"Mex\" Delgado",
     "email": "mdelgado@tresdoce.com.ar",
@@ -11,9 +11,16 @@
     "lib": "lib",
     "test": "__tests__"
   },
+  "files": [
+    "lib"
+  ],
+  "bin": {
+    "sonarProperties": "./dist-src/scripts/sonar-properties.js"
+  },
+  "main": "src/index.ts",
   "keywords": [
     "nestjs",
-    "demo"
+    "essentials"
   ],
   "repository": {
     "type": "git",
@@ -23,18 +30,19 @@
     "url": "https://github.com/tresdoce/tresdoce-toolkit/issues"
   },
   "homepage": "https://github.com/tresdoce/tresdoce-toolkit#readme",
-  "main": "src/index.ts",
   "license": "MIT",
   "scripts": {
-    "prebuild": "shx rm -rf ../../dist/demo",
-    "build": "pika build --out ../../dist/demo",
+    "prebuild": "shx rm -rf ../../dist/essentials",
+    "build": "pika build --out ../../dist/essentials",
     "test": "jest --runInBand --detectOpenHandles --coverage --forceExit"
   },
   "publishConfig": {
     "access": "public",
-    "directory": "../../dist/demo"
+    "directory": "../../dist/essentials"
   },
-  "peerDependencies": {},
+  "peerDependencies": {
+    "standard-version": "^9.5.0"
+  },
   "devDependencies": {
     "@tresdoce-toolkit/config": "^0.0.0",
     "@types/tresdoce-toolkit": "^0.0.0"
@@ -49,7 +57,7 @@
   "@pika/pack": {
     "pipeline": [
       [
-        "@pika/plugin-ts-standard-pkg",
+        "@pika/plugin-standard-pkg",
         {
           "exclude": [
             "**/__test__/*"
@@ -62,6 +70,14 @@
           "exclude": [
             "**/__test__/*"
           ]
+        }
+      ],
+      [
+        "pika-plugin-add-properties",
+        {
+          "properties": {
+            "main": "dist-src/index.js"
+          }
         }
       ],
       [

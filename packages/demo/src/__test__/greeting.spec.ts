@@ -1,7 +1,0 @@
-import { sayHello } from '../greeting';
-
-describe('Greeting', () => {
-  it('should be defined', () => {
-    expect(sayHello()).toBe('hello world! demo');
-  });
-});

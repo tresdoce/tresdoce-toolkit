@@ -2,7 +2,7 @@
   "extends": "@tresdoce-toolkit/config",
   "compilerOptions": {
     "rootDir": "./src",
-    "types": ["tresdoce-toolkit"]
+    "types": ["node", "tresdoce-toolkit"]
   },
   "include": ["src/**/*"],
   "exclude": [
