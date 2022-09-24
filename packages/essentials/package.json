@@ -1,6 +1,6 @@
 {
   "name": "@tresdoce-toolkit/essentials",
-  "version": "0.0.0",
+  "version": "0.1.0-beta.0",
   "description": "Tresdoce Toolkit - essentials configuration to application",
   "author": {
     "name": "Maximiliano \"Mex\" Delgado",
@@ -44,8 +44,8 @@
     "standard-version": "^9.5.0"
   },
   "devDependencies": {
-    "@tresdoce-toolkit/config": "^0.0.0",
-    "@types/tresdoce-toolkit": "^0.0.0"
+    "@tresdoce-toolkit/config": "^0.0.1-beta.0",
+    "@types/tresdoce-toolkit": "^0.0.1-beta.0"
   },
   "prettier": {
     "semi": true,
