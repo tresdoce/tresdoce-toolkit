@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 // node sonar-properties.js -t app -o tresdoce --pn tresdoce-toolkit-test -b test --bl .DS_Store config tiimiit-types
+// node sonar-properties.js -t monorepo --org api-program --p tiimiit-nestjs-toolkit -b develop --bl .DS_Store config tiimiit-types
 
 const fs = require('fs');
 const path = require('path');
@@ -28,23 +29,16 @@ const argv = yargs(hideBin(process.argv)).options({
     type: 'string',
   },
   organization: {
-    alias: 'o',
+    alias: 'org',
     describe: 'Organization name',
     required: true,
     type: 'string',
   },
   projectName: {
-    alias: 'pn',
+    alias: 'p',
     describe: 'Project name',
     required: true,
     type: 'string',
-  },
-  projectVersion: {
-    alias: 'pv',
-    describe: 'Project version',
-    required: false,
-    type: 'string',
-    default: '1.0.0',
   },
   branch: {
     alias: 'b',
@@ -52,6 +46,13 @@ const argv = yargs(hideBin(process.argv)).options({
     required: false,
     type: 'string',
     default: 'main',
+  },
+  projectVersion: {
+    alias: 'v',
+    describe: 'Project version',
+    required: false,
+    type: 'string',
+    default: '1.0.0',
   },
   blacklist: {
     alias: 'bl',

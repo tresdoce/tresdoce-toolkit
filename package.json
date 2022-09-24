@@ -86,6 +86,7 @@
     "lint-staged": "^12.2.2",
     "plop": "^3.0.5",
     "prettier": "^2.5.1",
+    "pika-plugin-add-properties": "^1.0.2",
     "rimraf": "^3.0.2",
     "supertest": "^6.2.2",
     "ts-jest": "^27.1.2",
