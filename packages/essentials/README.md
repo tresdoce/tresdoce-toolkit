@@ -40,7 +40,7 @@ npm install -S @tresdoce-toolkit/essentials
 ```
 
 ```
-yarn add @tresdoce-toolkit/essentials
+yarn add -D @tresdoce-toolkit/essentials
 ```
 
 <a name="configurations"></a>
