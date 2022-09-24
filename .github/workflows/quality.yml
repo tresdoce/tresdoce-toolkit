@@ -63,7 +63,7 @@ jobs:
         run: yarn lint
 
       - name: "🔨 Build"
-        run: yarn build && node scripts-args.js
+        run: yarn build && node sonar-args.js
 
       - name: "👨‍💻 Run Test"
         run: yarn test
