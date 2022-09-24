@@ -4,7 +4,7 @@ const fs = require('fs');
 const organizationName = 'tresdoce';
 const projectName = 'tresdoce-toolkit';
 const sonarProjectKey = `${organizationName}_${projectName}`;
-const sonarPropertiesFilename = 'scripts-project.properties';
+const sonarPropertiesFilename = 'sonar-project.properties';
 
 const blacklist = ['.DS_Store', 'config', 'tresdoce-types'];
 const directoryPath = path.join(__dirname, 'packages');
@@ -27,7 +27,7 @@ fs.readdir(directoryPath, (err, files) => {
 
     const sonarCloudProperties = `sonar.organization=${organizationName}
 sonar.projectKey=${sonarProjectKey}
-sonar.projectName=${sonarProjectKey}
+sonar.projectName=${projectName}
 sonar.projectVersion=1.0
 sonar.sourceEncoding=UTF-8
 sonar.sources=${sonarSources.join() || '.'}
