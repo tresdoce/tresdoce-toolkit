@@ -6,6 +6,11 @@ on:
   pull_request:
     branches: [ develop ]
 
+env:
+  SONAR_EXCLUDES: ${{ secrets.SONAR_EXCLUDES }}
+  SONAR_BLACKLIST: ${{ secrets.SONAR_BLACKLIST }}
+  SONAR_APP_TYPE: ${{ secrets.SONAR_APP_TYPE}}
+
 jobs:
   setup:
     runs-on: ubuntu-latest
@@ -64,10 +69,12 @@ jobs:
         run: yarn lint
 
       - name: "🔨 Build"
-        run: yarn build && node sonar-args.js
+        run: yarn build
 
       - name: "👨‍💻 Run Test"
-        run: yarn test
+        run: |
+          yarn sonar:properties -t ${SONAR_APP_TYPE} --org ${{ github.repository_owner }} --p ${{ github.event.repository.name }} -b ${GITHUB_REF#refs/heads/} --bl ${SONAR_BLACKLIST} --ex ${SONAR_EXCLUDES}
+          yarn test
         env:
           NODE_ENV: 'test'
 

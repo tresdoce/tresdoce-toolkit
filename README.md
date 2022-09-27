@@ -1,5 +1,5 @@
 <div align="center">
-    <img alt="nestjs-logo" width="180" height="auto" src="./.readme-static/logo-mex-red.svg" />
+    <img alt="nestjs-logo" width="180" height="auto" src="https://raw.githubusercontent.com/tresdoce/tresdoce-toolkit/master/.readme-static/logo-mex-red.svg" />
     <h1>Tresdoce Toolkit</h1>
 </div>
 
@@ -112,7 +112,7 @@ referencia [`conventional commits`](https://www.conventionalcommits.org/es/v1.0.
 
 <div align="center">
     <a href="mailto:mdelgado@tresdoce.com.ar" target="_blank" alt="Send an email">
-        <img src="./.readme-static/logo-mex-red.svg" width="120" alt="Mex" />
+        <img src="https://raw.githubusercontent.com/tresdoce/tresdoce-toolkit/master/.readme-static/logo-mex-red.svg" width="120" alt="Mex" />
     </a><br/>
     <p>Made with ❤</p>
 </div>
