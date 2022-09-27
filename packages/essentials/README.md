@@ -56,7 +56,7 @@ yarn add -D @tresdoce-toolkit/essentials
 ## 👨‍💻 Uso
 
 ```typescript
-
+node sonar-properties.js -t monorepo --org api-program --p tiimiit-nestjs-toolkit -b develop --bl .DS_Store config tiimiit-types
 ```
 
 ## 📄 Changelog
