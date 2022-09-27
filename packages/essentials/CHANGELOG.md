@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.0-beta.2](https://github.com/tresdoce/tresdoce-toolkit/compare/@tresdoce-toolkit/essentials@0.1.0-beta.1...@tresdoce-toolkit/essentials@0.1.0-beta.2) (2022-09-27)
+
+### 👨‍💻 Chores
+
+- edit workflows ([565a6a2](https://github.com/tresdoce/tresdoce-toolkit/commit/565a6a22126a2a9f0056baaf4b7f5dccfde1b919))
+
 ## [0.1.0-beta.1](https://github.com/tresdoce/tresdoce-toolkit/compare/@tresdoce-toolkit/essentials@0.1.0-beta.0...@tresdoce-toolkit/essentials@0.1.0-beta.1) (2022-09-27)
 
 ### 👨‍💻 Chores
