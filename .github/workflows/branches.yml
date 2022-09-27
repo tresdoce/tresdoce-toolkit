@@ -76,7 +76,7 @@ jobs:
 
       - name: "👨‍💻 Run Test"
         run: |
-          yarn sonar:properties -t ${SONAR_APP_TYPE} --org ${{ github.repository_owner }} --p ${{ github.event.repository.name }} -b ${GITHUB_REF##*/} --bl ${SONAR_BLACKLIST} --ex ${SONAR_EXCLUDES}
+          yarn sonar:properties -t ${SONAR_APP_TYPE} --org ${{ github.repository_owner }} --p ${{ github.event.repository.name }} -b ${GITHUB_REF#refs/heads/} --bl ${SONAR_BLACKLIST} --ex ${SONAR_EXCLUDES}
           yarn test
         env:
           NODE_ENV: 'test'
