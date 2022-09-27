@@ -1,5 +1,5 @@
 <div align="center">
-    <img alt="nestjs-logo" width="180" height="auto" src="./.readme-static/logo-mex-red.svg" />
+    <img alt="nestjs-logo" width="180" height="auto" src="https://raw.githubusercontent.com/tresdoce/tresdoce-toolkit/master/.readme-static/logo-mex-red.svg" />
     <h1>Tresdoce Toolkit<br/>Essentials</h1>
 </div>
 
@@ -16,8 +16,6 @@
 
 - [📝 Requerimientos básicos](#basic-requirements)
 - [🛠️ Instalar dependencia](#install-dependencies)
-- [⚙️ Configuración](#configurations)
-- [👨‍💻 Uso](#use)
 - [📄 Changelog](./CHANGELOG.md)
 - [📜 License MIT](./license.md)
 
@@ -43,22 +41,6 @@ npm install -S @tresdoce-toolkit/essentials
 yarn add -D @tresdoce-toolkit/essentials
 ```
 
-<a name="configurations"></a>
-
-## ⚙️ Configuración
-
-```typescript
-
-```
-
-<a name="use"></a>
-
-## 👨‍💻 Uso
-
-```typescript
-node sonar-properties.js -t monorepo --org api-program --p tiimiit-nestjs-toolkit -b develop --bl .DS_Store config tiimiit-types
-```
-
 ## 📄 Changelog
 
 Todos los cambios notables de este paquete se documentarán en el archivo [Changelog](./CHANGELOG.md).
@@ -67,7 +49,7 @@ Todos los cambios notables de este paquete se documentarán en el archivo [Chang
 
 <div align="center">
     <a href="mailto:mdelgado@tresdoce.com.ar" target="_blank" alt="Send an email">
-        <img src="../../.readme-static/logo-mex-red.svg" width="120" alt="Mex" />
+        <img src="https://raw.githubusercontent.com/tresdoce/tresdoce-toolkit/master/.readme-static/logo-mex-red.svg" width="120" alt="Mex" />
     </a><br/>
     <p>Made with ❤</p>
 </div>
