@@ -13,6 +13,8 @@ on:
 
 env:
   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+  GH_TOKEN: ${{ secrets.GH_TOKEN }}
+  GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
   GITHUB_EMAIL: ${{ secrets.GH_EMAIL }}
   SONAR_EXCLUDES: src/index.ts **/scripts/*
   SONAR_BLACKLIST: .DS_Store config tresdoce-types
