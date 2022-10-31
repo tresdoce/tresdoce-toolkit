@@ -1,7 +1,10 @@
 #!/usr/bin/env node
 
-// node sonar-properties.js -t app -o tresdoce --pn tresdoce-toolkit-test -b test --bl .DS_Store config tiimiit-types
-// node sonar-properties.js -t monorepo --org api-program --p tiimiit-nestjs-toolkit -b develop --bl .DS_Store config tiimiit-types
+// node sonar-properties.js -t app --org tresdoce -p tresdoce-toolkit-test -b test --ex src/main.ts
+// yarn sonar:properties -t app --org tresdoce -p nestjs-starter -b feat/essentials --ex src/main.ts
+
+// node sonar-properties.js -t monorepo --org api-program -p tresdoce-toolkit -b develop --bl .DS_Store config tresdoce-types
+// yarn sonar:properties -t monorepo --org tresdoce -p tresdoce-toolkit -b develop --bl .DS_Store config tresdoce-types
 
 const fs = require('fs');
 const path = require('path');
@@ -56,7 +59,7 @@ const argv = yargs(hideBin(process.argv)).options({
   },
   blacklist: {
     alias: 'bl',
-    describe: 'List of ignore to sonar analysis',
+    describe: 'List of ignore to sonar analysis for monorepo (.DS_Store, config, pkg-types)',
     required: false,
     type: 'array',
   },
