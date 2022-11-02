@@ -2,7 +2,13 @@
   "extends": "@tresdoce-toolkit/config",
   "compilerOptions": {
     "rootDir": "./src",
-    "types": ["node", "tresdoce-toolkit"]
+    "types": ["node", "tresdoce-toolkit"],
+    "skipLibCheck": true,
+    "sourceMap": false,
+    "esModuleInterop": true,
+    "module": "CommonJS",
+    "target": "ES5",
+    "moduleResolution": "node"
   },
   "include": ["src/**/*"],
   "exclude": [

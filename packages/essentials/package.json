@@ -65,14 +65,6 @@
         }
       ],
       [
-        "@pika/plugin-build-node",
-        {
-          "exclude": [
-            "**/__test__/*"
-          ]
-        }
-      ],
-      [
         "pika-plugin-add-properties",
         {
           "properties": {
